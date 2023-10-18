@@ -13,7 +13,7 @@
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
 WORKDIR /app
-
+EXPOSE 5000
 # Copy csproj and restore as distinct layers
 COPY *.csproj ./
 RUN dotnet restore
@@ -32,7 +32,7 @@ ENV ASPNETCORE_URLS=http://*:5000
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
 COPY --from=build-env /app/out .
-EXPOSE 5000
+
 ENTRYPOINT ["dotnet", "SmartLocker.Software.Backend.dll"]
 
 

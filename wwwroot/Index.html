@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify</title>
+  </head>
+  <body>
+    <div align="center"><button onclick="verify()">verify</button></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script>
+      async function verify() {
+        try {
+          const response = await axios.get(
+            "http://localhost:5001/api/account/VerifyAccount/1"
+          );
+          console.log(response.data);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLocker.Software.Backend", "SmartLocker.Software.Backend.csproj", "{7B2AC21D-D236-45B1-8758-6C17E8022D3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B2AC21D-D236-45B1-8758-6C17E8022D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B2AC21D-D236-45B1-8758-6C17E8022D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B2AC21D-D236-45B1-8758-6C17E8022D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B2AC21D-D236-45B1-8758-6C17E8022D3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A3B9723-02F8-4DC3-ADFD-BF25A28AD76E}
+	EndGlobalSection
+EndGlobal

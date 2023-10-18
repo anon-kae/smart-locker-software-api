@@ -12,7 +12,6 @@ namespace SmartLocker.Software.Backend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = RoleUser.User)]
     public class HomeController : ControllerBase
     {
         private readonly ITestService _testService;

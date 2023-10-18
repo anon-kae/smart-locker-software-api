@@ -25,7 +25,7 @@ RUN dotnet publish -c Release -o out
 # Change timezone to local time
 ENV TZ=Asia/Bangkok
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-ENV ASPNETCORE_ENVIRONMENT=development
+# ENV ASPNETCORE_ENVIRONMENT=development
 ENV ASPNETCORE_URLS=http://*:5000
 
 # Build runtime image

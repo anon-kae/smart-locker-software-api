@@ -42,7 +42,7 @@ namespace SmartLocker.Software.Backend.Entities
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=157.245.203.196;Initial Catalog=SmartLocker;User ID=sa;Password=ab8mbu3t053tEn8;MultipleActiveResultSets=true");
+                optionsBuilder.UseSqlServer("Server=157.245.203.196;Initial Catalog=SmartLocker;User ID=sa;Password=ab8mbu3t053tEn8");
             }
         }
 

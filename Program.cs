@@ -34,6 +34,7 @@ namespace SmartLocker.Software.Backend
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseKestrel();
+                    webBuilder.UseUrls("http://*:5000");
                     webBuilder.UseContentRoot(Directory.GetCurrentDirectory());
                     webBuilder.UseStartup<Startup>();
                 });

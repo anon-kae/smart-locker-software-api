@@ -158,7 +158,7 @@ namespace SmartLocker.Software.Backend
             app.UseRouting();
 
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
